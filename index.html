@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirection aléatoire</title>
+    <script>
+        window.onload = function() {
+            var urls = [
+                "https://forms.gle/TYYxDa8ySxnZzkJy6", // Formulaire A
+                "https://forms.gle/WMQBQyXihtegefMe7"  // Formulaire B
+            ];
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        };
+    </script>
+</head>
+<body>
+    <p>Redirection en cours...</p>
+</body>
+</html>
